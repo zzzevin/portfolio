@@ -6,7 +6,7 @@ html, body {
 	font-family: 'League Spartan Variable','Arial', sans-serif;
 	// -webkit-font-smoothing: antialiased;
 	// -moz-osx-font-smoothing: grayscale;
-  color: $color--whitetext;
+  	color: $color--whitetext;
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -387,9 +387,9 @@ body {
 				font-weight: 500;
 				font-size: 1.5rem;
 
-				@include screen__xl {
-					font-size: 1.625rem;
-				}
+				// @include screen__xl {
+				// 	font-size: 1.625rem;
+				// }
 			}
 
 			.prev-next-button__desc {
