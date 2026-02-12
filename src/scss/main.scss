@@ -406,12 +406,24 @@ body {
 			}
 
 			.prev-next-icon {
+				display: none;
 				width: 1.75rem;
+				height: 1.75rem;
 				top: 1rem;
 				right: 1rem;
 
+				svg {
+					width: 100%;
+					height: 100%;
+				}
+
+				@include screen__md {
+					display: block;
+				}
+
 				@include screen__xl {
 					width: 2rem;
+					height: 2rem;
 					top: 1.5rem;
 					right: 1.5rem;
 				}
@@ -450,6 +462,11 @@ body {
 
 			.hero-icon {
 				top: 1.25rem;
+
+				svg {
+					width: 100%;
+					height: 100%;
+				}
 			}
 		}
   }

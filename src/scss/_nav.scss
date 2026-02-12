@@ -231,7 +231,8 @@ nav {
     }
 
     .nav-link-item {
-      display: block;
+      display: flex;
+      align-items: center;
       position: relative;
       width: 100%;
       padding: .85rem 1.5rem .75rem;
@@ -242,15 +243,6 @@ nav {
 
       &.active {
         background-color: $color--graybutton;
-
-        // &:before {
-        //   content: "";
-        //   position: absolute;
-        //   top: 0;
-        //   left: 0;
-        //   height: 100%;
-        //   border-left: 4px solid $color--primary;
-        // }
       }
 
       @include hoverable {
@@ -258,7 +250,7 @@ nav {
       }
 
       .nav-link-item--text {
-        vertical-align: middle;
+        padding-top: 2px;
       }
 
       .nav-link-item--tag {
@@ -268,6 +260,13 @@ nav {
         color: $color--graytext;
         line-height: 1.25;
         vertical-align: middle;
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+        justify-content: end;
+        margin-left: auto;
       }
     }
   }

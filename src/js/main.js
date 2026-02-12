@@ -17,6 +17,10 @@ $(document).ready(function(){
       clearNavActive();
       $('#about-link').addClass('active');
       break;
+    case '/trails.html':
+      clearNavActive();
+      $('#trails-link').addClass('active');
+      break;
     case '/verity.html':
       clearNavActive();
       $('#verity-link').addClass('active');
