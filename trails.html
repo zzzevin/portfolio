@@ -119,26 +119,50 @@
       </div>
     </nav>
     <div class="main">
-      <div class="home-title">
-        <h1>Hi, I'm Zevin</h1>
-      </div>
-      <p>I'm a Product Designer with front-end savvy. In addition to practicing the full range of UX and visual sub-disciplines, I'm often knee-deep implementing my own designs or being a bridge between the design and dev camps.</p>
-      <figure class="img-group"><img src="/img/img--comic-home-1.png" alt="drawing of me being too quick to do things on my own"/></figure>
-      <p>This kind of do-it-myself attitude has its drawbacks, but it has made me into a sort of design/dev amoeba. For example, I build all my portfolio sites from scratch, this one included. In the end, I just enjoy making cool things.</p>
-      <p>If you'd like to chat, please reach out via email at <a class="link" href="mailto:zevin.work@gmail.com" target="_blank">zevin.work@gmail.com</a> or ping me on <a class="link" href="https://www.linkedin.com/in/zzzevin/" target="_blank">LinkedIn</a>.</p>
-      <div class="case-section">
-        <h2>Work examples</h2>
-        <div class="prev-next case-button-set">
-          <div class="case-button-wrap"><a class="case-button" href="trails"><span class="prev-next-button__text">TRAILS Design</span><span class="prev-next-button__label"> </span><span class="prev-next-button__desc">Design engineering for school mental health program</span>
-              <div class="prev-next-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="work-hero">
+        <h1>TRAILS Design
+          <div class="hero-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 8.17529C9.66962 8.99897 8 11.2214 8 13.8339C8 16.4463 9.66962 18.6688 12 19.4925M16 8.17529C18.3304 8.99897 20 11.2214 20 13.8339C20 16.4463 18.3304 18.6688 16 19.4925" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
 <path d="M12 2C6.32457 2.95216 2 7.88809 2 13.8341C2 19.7801 6.32457 24.716 12 25.6682M16 2C21.6754 2.95216 26 7.88809 26 13.8341C26 19.7801 21.6754 24.716 16 25.6682" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
 <circle cx="23" cy="5.83398" r="3" fill="white"/>
 </svg>
 
-              </div></a></div>
-          <div class="case-button-wrap"><a class="case-button" href="verity"><span class="prev-next-button__text">IBM Verity</span><span class="prev-next-button__desc">ML-powered research tool for generating highlights</span>
-              <div class="prev-next-icon"><?xml version="1.0" encoding="utf-8"?>
+          </div>
+        </h1>
+        <div class="work-hero-desc">Design engineering, product design, and visual design for school mental health program</div>
+      </div>
+      <p><i>Note: As this work is current, many of the artifacts shown are WIP</i></p>
+      <p><a class="link" href="https://trailstowellness.org/" target="_blank">TRAILS</a> is a nonprofit organization dedicated to teaching school staff how to educate and respond to mental health issues. I was hired as a Product Design contractor to help work out their multi language functionality, but was soon brought on board full time as a Design Engineer to flesh out the design system and operate as a design/dev hybrid.<br/><br/>When I first joined, TRAILS was in the final phases of receiving an updated brand and infosite from an external agency, but the materials were limited to marketing type content and unsuited for general product use. I had to take the updated brand and try to extrapolate and adapt it to fit our dashboard side of the app.</p>
+      <figure class="img-group"><img src="/img/img--trails-color.png" alt="color scale developed with base hues from agency branding"/>
+        <figcaption class="annotation">We only received a handful of colors (without even guidance on proper ratios of usage) from the branding agency, so I took the core values and extended a color scale to work with UI components. The color scale uses an HSL method where the hue value is locked, ane each step is separated by a lightness value of 10.</figcaption>
+      </figure>
+      <figure class="img-group"><img src="/img/img--trails-type.png" alt="a list of type classes developed for UI design/dev use"/>
+        <figcaption class="annotation">I also configured a type scale and class specification that helped other designers and developers work quickly and effectively to place text. As with the color scale, these were all documented via Storybook pages for anyone on the team to reference.</figcaption>
+      </figure>
+      <p>However, it wasn't long before the TRAILS mission and product went through a pivot phase, and with it came an opportunity to iterate on existing styles so that our brand is an extension of product, and not the other way around. Hoping to have a bit more fun with our identity, I began to draft a few "what if" concepts that leaned on my experience as an artist.</p>
+      <figure class="img-group"><img src="/img/img--trails-splash.png" alt="a draft of splash page with updated brand and illustration"/>
+        <figcaption class="annotation">Updated brand ideas included leaning more into storytelling and prioritizing student engagement above all else. Our educational materials are the heart of our program, so I drafted characters, settings, and stories to center our identity on.</figcaption>
+      </figure>
+      <p>Unfortunately, the team was on sharp timeline to deliver the new product MVP, so extensive changes to branding were  not in scope given the quantity of materials to update. Given though that we were switching to a new headless UI library (Shadcn), general product-look updates were still on the table. So with that, I got to work drafting up example screens to hash out the overall vibe.<br/><br/>In order to not overly influence the UX iterations of product design squad who were working grayscale on the new MVP, I came up with my own "fake" version of our product to test out theme.</p>
+      <figure class="img-group"><img src="/img/img--trails-screen-1.png" alt="an example home screen used to test out UI theme"/>
+        <figcaption class="annotation">My "fake" version of the product has the user travel a cosmic journey to collect Cards: short snippets of concepts or activities that mapped to the mental health materials in the existing product.</figcaption>
+      </figure>
+      <figure class="img-group"><img src="/img/img--trails-screen-2.png" alt="an example journey screen used to test out UI theme"/>
+        <figcaption class="annotation">Similarly, the journey and stops correspond to the learning paths the product team was developing for teaching our materials. In my version, each topic or mental health skill has its own star system with a fictional story that ties into clinical learning.</figcaption>
+      </figure>
+      <figure class="img-group"><img src="/img/img--trails-screen-3.png" alt="an example card detail screen used to test out UI theme"/>
+        <figcaption class="annotation">A card detail screen. Here, the primary CTA button is the most vibrant and brand colored of UI elements. Other components stick to more neutral cool gray tones.</figcaption>
+      </figure>
+      <p>At the time of this writing, I'm working on the frontend to begin adding components and applying this theme. Because of the size and nature of this team, design system source of truth will likely lie in the code and Storybook documentation.<br/><br/>I have much more I could share on all of this work, so if we happen to chat, I can go into my process in much more detail. Aside from that, I can list a few other odds and ends in terms of contribution to the team.</p>
+      <ul>
+        <li>solo edited sitewide css for brand refresh launch</li>
+        <li>component frontend work to create and refactor components</li>
+        <li>served as liason between designers and developers, communicating constraints and efficient design</li>
+        <li>began a Figma component library, ultimately deprioritized given current team size</li>
+        <li>UX work on flows for miscellaneous featuresets and side products</li>
+      </ul>
+      <div class="prev-next"><a class="prev-button" href="index"><span class="prev-next-button__label">PREV</span><span class="prev-next-button__text">About</span></a><a class="next-button" href="verity"><span class="prev-next-button__label">NEXT</span><span class="prev-next-button__text">IBM Verity</span>
+          <div class="prev-next-icon"><?xml version="1.0" encoding="utf-8"?>
 <svg viewBox="0 0 20 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient gradientUnits="objectBoundingBox" x1="0" y1="0.5000067" x2="0.99998665" y2="0.5000067" id="gradient_1">
@@ -161,66 +185,6 @@
       </g>
     </g>
   </g>
-</svg>
-
-              </div></a></div>
-          <div class="case-button-wrap"><a class="case-button" href="bluemine"><span class="prev-next-button__text">IBM Bluemine</span><span class="prev-next-button__desc">Large scale internal research and publishing platform</span>
-              <div class="prev-next-icon"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
-	<defs><style>.cls-1{fill:url(#linear-gradient);}.cls-2{fill:#fff;}</style><linearGradient id="linear-gradient" y1="8" x2="16" y2="8" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0f62fe"/><stop offset="1" stop-color="#78a9ff"/></linearGradient></defs><polygon class="cls-1" points="4 2 12 2 16 6 8 14 0 6 4 2"/><rect class="cls-2" x="8.59" y="4.59" width="2.83" height="2.83" transform="translate(-1.31 8.83) rotate(-45)"/>
-</svg>
-              </div></a></div>
-        </div>
-      </div>
-      <div class="work-section">
-        <h2>Work history & education</h2>
-        <div class="work-block">
-          <div class="work-block-top">
-            <div class="work-block-title">TRAILS</div>
-            <div class="work-block-date">2024-present</div>
-          </div>
-          <div class="work-block-bottom">Design system, product design, front-end development</div>
-        </div>
-        <div class="work-block">
-          <div class="work-block-top">
-            <div class="work-block-title">IBM</div>
-            <div class="work-block-date">2016-2021</div>
-          </div>
-          <div class="work-block-bottom">Product design, front-end development, squad leadership</div>
-        </div>
-        <div class="work-block">
-          <div class="work-block-top">
-            <div class="work-block-title">Sage</div>
-            <div class="work-block-date">2016</div>
-          </div>
-          <div class="work-block-bottom">Visual design</div>
-        </div>
-        <div class="work-block">
-          <div class="work-block-top">
-            <div class="work-block-title">Macquarium</div>
-            <div class="work-block-date">2016</div>
-          </div>
-          <div class="work-block-bottom">Contracted design, front-end development</div>
-        </div>
-        <div class="work-block">
-          <div class="work-block-top">
-            <div class="work-block-title">Digital Scientists</div>
-            <div class="work-block-date">2013-2015</div>
-          </div>
-          <div class="work-block-bottom">Product design, front-end development</div>
-        </div>
-        <div class="work-block education-block">
-          <div class="work-block-top">
-            <div class="work-block-title">Georgia Institute of Technology</div>
-            <div class="work-block-date">2009-2013</div>
-          </div>
-          <div class="work-block-bottom">B.S. Computational Media</div>
-        </div>
-      </div>
-      <div class="prev-next"><a class="next-button" href="trails"><span class="prev-next-button__label">NEXT</span><span class="prev-next-button__text">TRAILS Design</span>
-          <div class="prev-next-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 8.17529C9.66962 8.99897 8 11.2214 8 13.8339C8 16.4463 9.66962 18.6688 12 19.4925M16 8.17529C18.3304 8.99897 20 11.2214 20 13.8339C20 16.4463 18.3304 18.6688 16 19.4925" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M12 2C6.32457 2.95216 2 7.88809 2 13.8341C2 19.7801 6.32457 24.716 12 25.6682M16 2C21.6754 2.95216 26 7.88809 26 13.8341C26 19.7801 21.6754 24.716 16 25.6682" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-<circle cx="23" cy="5.83398" r="3" fill="white"/>
 </svg>
 
           </div></a></div>

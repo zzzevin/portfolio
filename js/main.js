@@ -17,27 +17,31 @@ $(document).ready(function(){
       clearNavActive();
       $('#about-link').addClass('active');
       break;
-    case '/verity.html':
+    case '/trails':
+      clearNavActive();
+      $('#trails-link').addClass('active');
+      break;
+    case '/verity':
       clearNavActive();
       $('#verity-link').addClass('active');
       break;
-    case '/bluemine.html':
+    case '/bluemine':
       clearNavActive();
       $('#bluemine-link').addClass('active');
       break;
-    case '/agency.html':
+    case '/agency':
       clearNavActive();
       $('#agency-link').addClass('active');
       break;
-    case '/eos.html':
+    case '/eos':
       clearNavActive();
       $('#eos-link').addClass('active');
       break;
-    case '/cupid95.html':
+    case '/cupid95':
       clearNavActive();
       $('#cupid-link').addClass('active');
       break;
-    case '/resume.html':
+    case '/resume':
       clearNavActive();
       $('#resume-link').addClass('active');
       break;
