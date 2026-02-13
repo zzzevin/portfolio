@@ -17,19 +17,35 @@ html(lang="en")
 
       //- pic of color scale with annotation
       figure.img-group
+        img(src='/img/img--trails-color.png' alt='color scale developed with base hues from agency branding')
         figcaption.annotation We only received a handful of colors (without even guidance on proper ratios of usage) from the branding agency, so I took the core values and extended a color scale to work with UI components. The color scale uses an HSL method where the hue value is locked, ane each step is separated by a lightness value of 10.
 
       //- pic of type scale with annotation
       figure.img-group
+        img(src='/img/img--trails-type.png' alt='a list of type classes developed for UI design/dev use')
         figcaption.annotation I also configured a type scale and class specification that helped other designers and developers work quickly and effectively to place text. As with the color scale, these were all documented via Storybook pages for anyone on the team to reference.
 
       p However, it wasn't long before the TRAILS mission and product went through a pivot phase, and with it came an opportunity to iterate on existing styles so that our brand is an extension of product, and not the other way around. Hoping to have a bit more fun with our identity, I began to draft a few "what if" concepts that leaned on my experience as an artist.
 
       //- pic of new splash page
+      figure.img-group
+        img(src='/img/img--trails-splash.png' alt='a draft of splash page with updated brand and illustration')
+        figcaption.annotation Updated brand ideas included leaning more into storytelling and prioritizing student engagement above all else. Our educational materials are the heart of our program, so I drafted characters, settings, and stories to center our identity on.
 
-      p Unfortunately, the team was on sharp timeline to deliver the new product MVP, so extensive changes to branding were  not in scope given the quantity of materials to update. Given though that we were switching to a new headless UI library (Shadcn), general product-look updates were still on the table. So with that, I got to work drafting up example screens to hash out the overall vibe.#[br]#[br]In order to not overly influence the UX iterations of product design squad who were working grayscale on the new MVP, I came up with my own "fake" version of our product to test out screens.
+      p Unfortunately, the team was on sharp timeline to deliver the new product MVP, so extensive changes to branding were  not in scope given the quantity of materials to update. Given though that we were switching to a new headless UI library (Shadcn), general product-look updates were still on the table. So with that, I got to work drafting up example screens to hash out the overall vibe.#[br]#[br]In order to not overly influence the UX iterations of product design squad who were working grayscale on the new MVP, I came up with my own "fake" version of our product to test out theme.
 
       //- pic of home, journey, card detail
+      figure.img-group
+        img(src='/img/img--trails-screen-1.png' alt='an example home screen used to test out UI theme')
+        figcaption.annotation My "fake" version of the product has the user travel a cosmic journey to collect Cards: short snippets of concepts or activities that mapped to the mental health materials in the existing product.
+      
+      figure.img-group
+        img(src='/img/img--trails-screen-2.png' alt='an example journey screen used to test out UI theme')
+        figcaption.annotation Similarly, the journey and stops correspond to the learning paths the product team was developing for teaching our materials. In my version, each topic or mental health skill has its own star system with a fictional story that ties into clinical learning.
+
+      figure.img-group
+        img(src='/img/img--trails-screen-3.png' alt='an example card detail screen used to test out UI theme')
+        figcaption.annotation A card detail screen. Here, the primary CTA button is the most vibrant and brand colored of UI elements. Other components stick to more neutral cool gray tones.
 
       p At the time of this writing, I'm working on the frontend to begin adding components and applying this theme. Because of the size and nature of this team, design system source of truth will likely lie in the code and Storybook documentation.#[br]#[br]I have much more I could share on all of this work, so if we happen to chat, I can go into my process in much more detail. Aside from that, I can list a few other odds and ends in terms of contribution to the team.
 
@@ -39,3 +55,13 @@ html(lang="en")
         li served as liason between designers and developers, communicating constraints and efficient design
         li began a Figma component library, ultimately deprioritized given current team size
         li UX work on flows for miscellaneous featuresets and side products
+      
+      .prev-next
+        a.prev-button(href='index.html')
+          span.prev-next-button__label PREV
+          span.prev-next-button__text About
+        a.next-button(href='verity.html')
+          span.prev-next-button__label NEXT
+          span.prev-next-button__text IBM Verity
+          .prev-next-icon
+            include ../img/icon--verity.svg
