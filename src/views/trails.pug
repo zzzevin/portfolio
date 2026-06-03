@@ -7,54 +7,64 @@ html(lang="en")
       .work-hero
         h1 TRAILS Design
           .hero-icon
-            include ../img/icon--trails-white.svg
+            include ../img/icon--trails-logo.svg
         //-   .hero-tag TRAILS
-        .work-hero-desc Design engineering, product design, and visual design for school mental health program
+        .work-hero-desc Design system leadership, engineering, and visual design for school mental health program
       
-      p <i>Note: As this work is current, many of the artifacts shown are WIP</i>
+      p #[a.link(href='https://trailstowellness.org/' target='_blank') TRAILS] is a nonprofit organization that enables school staff to deliver mental health programming and education to students in K-12. I currently work as Design System Lead / UX Engineer as we prepare to launch a 2.0 version of our program.#[br]#[br]When I started with TRAILS, they had just received a new branding guide that focused mainly on marketing materials. It was my job to translate it into a product-compatible Design System that could be used for the web platform, where we host learning courses for school staff and resources they can use with students.
 
-      p #[a.link(href='https://trailstowellness.org/' target='_blank') TRAILS] is a nonprofit organization dedicated to teaching school staff how to educate and respond to mental health issues. I was hired as a Product Design contractor to help work out their multi language functionality, but was soon brought on board full time as a Design Engineer to flesh out the design system and operate as a design/dev hybrid.#[br]#[br]When I first joined, TRAILS was in the final phases of receiving an updated brand and infosite from an external agency, but the materials were limited to marketing type content and unsuited for general product use. I had to take the updated brand and try to extrapolate and adapt it to fit our dashboard side of the app.
-
-      //- pic of color scale with annotation
+      //- pic of color ratio snippet
       figure.img-group
-        img(src='/img/img--trails-color.png' alt='color scale developed with base hues from agency branding')
-        figcaption.annotation We only received a handful of colors (without even guidance on proper ratios of usage) from the branding agency, so I took the core values and extended a color scale to work with UI components. The color scale uses an HSL method where the hue value is locked, ane each step is separated by a lightness value of 10.
+        img(src='/img/img--trails-1.png' alt='example of color ratios mocked up in two screens, with swatches below')
+        figcaption.annotation Color ratios weren't specified by the brand book, so I adapted a vibe based on materials produced by the Content team. The goal was a generally warm tone and accessible tone.
 
-      //- pic of type scale with annotation
+      //- pic of color scale
       figure.img-group
-        img(src='/img/img--trails-type.png' alt='a list of type classes developed for UI design/dev use')
-        figcaption.annotation I also configured a type scale and class specification that helped other designers and developers work quickly and effectively to place text. As with the color scale, these were all documented via Storybook pages for anyone on the team to reference.
-
-      p However, it wasn't long before the TRAILS mission and product went through a pivot phase, and with it came an opportunity to iterate on existing styles so that our brand is an extension of product, and not the other way around. Hoping to have a bit more fun with our identity, I began to draft a few "what if" concepts that leaned on my experience as an artist.
-
-      //- pic of new splash page
-      figure.img-group
-        img(src='/img/img--trails-splash.png' alt='a draft of splash page with updated brand and illustration')
-        figcaption.annotation Updated brand ideas included leaning more into storytelling and prioritizing student engagement above all else. Our educational materials are the heart of our program, so I drafted characters, settings, and stories to center our identity on.
-
-      p Unfortunately, the team was on sharp timeline to deliver the new product MVP, so extensive changes to branding were  not in scope given the quantity of materials to update. Given though that we were switching to a new headless UI library (Shadcn), general product-look updates were still on the table. So with that, I got to work drafting up example screens to hash out the overall vibe.#[br]#[br]In order to not overly influence the UX iterations of product design squad who were working grayscale on the new MVP, I came up with my own "fake" version of our product to test out theme.
-
-      //- pic of home, journey, card detail
-      figure.img-group
-        img(src='/img/img--trails-screen-1.png' alt='an example home screen used to test out UI theme')
-        figcaption.annotation My "fake" version of the product has the user travel a cosmic journey to collect Cards: short snippets of concepts or activities that mapped to the mental health materials in the existing product.
+        img(src='/img/img--trails-2.png' alt='each of the four main brand colors displayed in columns, showing each value step randing from 50 to 950')
+        figcaption.annotation The existing brand book only specified a few shades of the main and secondary colors, which usually isn't enough for Product. I took the base hue and adapted a scale in the oklch format with lightness steps loosely based on Tailwind's default color scales. Because the brand uses both warm and cool tones, the neutrals are true neutral -- no chroma.
       
+      //- pic of code snippet, globals.css
       figure.img-group
-        img(src='/img/img--trails-screen-2.png' alt='an example journey screen used to test out UI theme')
-        figcaption.annotation Similarly, the journey and stops correspond to the learning paths the product team was developing for teaching our materials. In my version, each topic or mental health skill has its own star system with a fictional story that ties into clinical learning.
+        img(src='/img/img--trails-3.png' alt='screenshot of globals.css code showing shadcn theme tokens and design tokens')
+        figcaption.annotation Because of our small team, we decided to go with a Shadcn + Tailwind frontend setup. This made it fairly simple to set up Design System tokens and custom utilities and quickly establish a basic theme (although this came with its own set of limitations).
 
+      //- pic of storybook docs
       figure.img-group
-        img(src='/img/img--trails-screen-3.png' alt='an example card detail screen used to test out UI theme')
-        figcaption.annotation A card detail screen. Here, the primary CTA button is the most vibrant and brand colored of UI elements. Other components stick to more neutral cool gray tones.
+        img(src='/img/img--trails-4.png' alt='screenshot of Storybook documentation showing a bit of typography')
+        figcaption.annotation And to help both designers and developers with guidelines and usage, I set up a few Storybook pages outside our component library to go over things like color scale and the pictured typography system. I wrote a few custom type classes in order to constrain our UI text to a collection of presets.
 
-      p At the time of this writing, I'm working on the frontend to begin adding components and applying this theme. Because of the size and nature of this team, design system source of truth will likely lie in the code and Storybook documentation.#[br]#[br]I have much more I could share on all of this work, so if we happen to chat, I can go into my process in much more detail. Aside from that, I can list a few other odds and ends in terms of contribution to the team.
+      p My being a design/dev hybrid let our designers work in low to mid-fidelity, and when the time came to build, I translated the functional intent from Figma wires while personally filling in the blanks like responsive behaviors and content constraints. This also meant that we didn't need to fully compose a Figma design library, as the number of designers on the team didn't quite justify the effort to maintain one, especially when there was so much plasticity from building out the 2.0 product.
 
-      ul
-        li solo edited sitewide css for brand refresh launch
-        li component frontend work to create and refactor components
-        li served as liason between designers and developers, communicating constraints and efficient design
-        li began a Figma component library, ultimately deprioritized given current team size
-        li UX work on flows for miscellaneous featuresets and side products
+      //- compilation of components
+      figure.img-group
+        img(src='/img/img--trails-5.png' alt='examples of components assembled in a loose grid')
+        figcaption.annotation A snapshot of our component library
+
+      p Another result of being a small team -- we leveraged Shadcn's headless component library as a base for commonly used primitives, while building upon them to develop a few custom components as necessary. Beyond just the basic theme variables though, I also adjusted the styling for each import so that felt like a unique brand and not just a barely customized Shadcn project that you see often on the web these days.#[br]#[br]I configured and built essentially all the components in our Storybook, including things like their skeleton loading states and their placement grids. Each component also had a basic set of Storybook stories to display and test their various states.
+
+      //- pic of storybook entry
+      figure.img-group
+        img(src='/img/img--trails-6.png' alt='a storybook entry showing a list of items in different states')
+        figcaption.annotation An example entry showing the different states of our module list item component
+
+      p When the frontend build of 2.0 began, I configured the overall app shell (our app uses Tanstack Start), including the navigation, column system, and base responsive behavior. And as features started getting built out, and the PRs started rolling in, my role was the design sign off and review of every frontend PR. What I couldn't get to in a sprint (it's hard matching the pace of many other developers), we would merge in and create design pass tickets for the following sprint. It kind of worked... other than me feeling sometimes like I was drowning in PR review.#[br]#[br]In addition to heads-down dev work, another responsibility was injecting some fun and color into our content. The older version of the product used tiny pdf previews for resource cards, and basically no imagery elsewhere. I took on the task of creating a visual color-coding system based on our mental health skill categories, and began creating a set of thumbnails for the many item cards across the app.
+
+      //- pic of thumbnails
+      figure.img-group
+        img(src='/img/img--trails-7.png' alt='a collection of illustrated thumbnail graphics')
+        figcaption.annotation Our content can be categorized by subject matter, so that felt like a natural way to establish color coding and 'families' of resources. Less saturated icons were reserved for role-based content or miscellaneous categories.
+      
+      p In addition to all of the above, I also do lofi ideation work and partner with the (currently only other) designer to work through implementation nuances and iteration.#[br]#[br]We're currently in the thick of building and trimming of features for MVP, but below are a few screenshots of the actual current staging build.
+
+      //- pic of staging home
+      figure.img-group
+        img(src='/img/img--trails-8.png' alt='screenshot of home page on staging, showing navigation and blocks of content')
+        figcaption.annotation Home page with test seed data
+      
+      //- pic of staging pathway detail
+      figure.img-group
+        img(src='/img/img--trails-9.png' alt='screenshot of pathway detail page on staging, showing a course-like setup with accordion steps and line items within')
+        figcaption.annotation Pathway page with (again) test seed data and placeholder thumbnails.
       
       .prev-next
         a.prev-button(href='index')
