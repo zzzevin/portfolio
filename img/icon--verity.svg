@@ -12,7 +12,7 @@
   </defs>
   <g id="icon--verity Copy" clip-path="url(#clip_1)">
     <path d="M20 0L20 0L20 20L0 20L0 0L20 0Z" id="icon--verity-Copy" fill="#FFFFFF" fill-opacity="0" stroke="none" />
-    <g id="verity-prototype-v4" transform="translate(2 2)">
+    <g id="verity-prototype-v4" transform="scale(1.25 1.25)">
       <g id="06---fact-preview-copy-16">
         <g id="Group-12">
           <path d="M0 16L16 16L16 0L0 0L0 16Z" id="Fill-1" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
